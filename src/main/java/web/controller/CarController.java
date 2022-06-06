@@ -20,10 +20,6 @@ public class CarController {
 
     @GetMapping(value = "/cars")
     public String printWelcome(ModelMap model, @RequestParam(required = false) String count) {
-        /*List<String> messages = new ArrayList<>();
-        messages.add("This is Cars Page!");
-        messages.add("WTF??");
-        messages.add("Yappp");*/
 
         int amount = (count != null) ? Integer.parseInt(count) : 5;
 
