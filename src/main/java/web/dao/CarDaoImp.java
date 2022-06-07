@@ -10,9 +10,9 @@ import java.util.List;
 public class CarDaoImp implements CarDao {
 
     /*
-     Defualt Data DAO, which emulutes DB work
+     * Defualt Data DAO, which emulutes DB work
      */
-    private Car carsArray[] = {
+    private final Car[] carsArray = {
             new Car(1, "BMW", "X5", 5600000),
             new Car(2, "Mercedes-Benz", "W223", 12000000),
             new Car(3, "Porsche", "991", 6900000),
@@ -21,7 +21,7 @@ public class CarDaoImp implements CarDao {
     };
 
     /*
-     Method, which emulutes SELECT from DB
+     * Method, which emulutes SELECT from DB
      */
     @Override
     public List<Car> selectCars(int amount) {
